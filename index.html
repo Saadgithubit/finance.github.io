@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="finance.css">
+</head>
+<body>
+    
+    <div class="heading-container">
+        <h1>Finance App</h1>
+    </div><br>
+    <div class="container">
+        <input type="text" placeholder="Enter Discription" name="" id="discription">
+        <input type="text" placeholder="Enter Amount" name="" id="amount">
+
+        <button onclick="addIncome()">Add Income</button>
+        <button onclick="addExpense()">Add Expense</button>
+        <button onclick="calculate()" class="hide" id="cal">Calculate</button>
+    </div>
+
+    <div class="table-container">
+        <table class="hide" id="table" border="2">
+            <tr>
+                <th>Discription</th>
+                <th>Amount</th>
+                <th>Type</th>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <script src="finance.js"></script>
+</body>
+</html>
