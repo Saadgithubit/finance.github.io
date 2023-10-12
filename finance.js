@@ -55,19 +55,23 @@ function calculate(){
     var tableRow = document.createElement('tr')
     var tableHeading = document.createElement('th')
     var tableData = document.createElement('td')
+    tableData.colSpan = '2'
    tableHeading.innerHTML = 'Total'
     var total;
     if(incomeAmount < expenseAmount){
         total = expenseAmount - incomeAmount
-        tableData.innerHTML = total
+        tableData.innerHTML = 'Total Loss Amount Is ' + total
     }
     else{
         total = incomeAmount - expenseAmount
-        tableData.innerHTML = total
+        tableData.innerHTML = 'Total Income Amount Is ' + total
     }
     tableRow.append(tableHeading)
     tableRow.append(tableData)
     table.append(tableRow)
+
+    var btn = document.getElementById('cal')
+    btn.className = 'hide'
 
 
 }
